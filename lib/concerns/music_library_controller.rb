@@ -57,6 +57,8 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.chomp
+    songs = Song.all
+    songs.each.with_index(1) {|song, index| puts "#{song.name}"}
   end
 
 

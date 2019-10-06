@@ -64,11 +64,6 @@ class MusicLibraryController
     else
       false
     end
-      song
-    end
-
-
+    song
   end
-
-
 end

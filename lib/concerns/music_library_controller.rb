@@ -65,7 +65,7 @@ class MusicLibraryController
       false
     end
       song
-    ends=
+    end
 
 
   end

@@ -21,21 +21,18 @@ class MusicLibraryController
 
     user_input = gets.chomp
 
-    if user_input == "list songs"
+    case
+    when user_input == "list songs"
       list_songs
-    elsif
-      user_input == "list artists"
-        list_artists
-    elsif
-      user_input == "list genres"
-        list_genres
-    elsif
-      user_input == "list artist"
-        list_songs_by_artist
-    elsif
-      user_input == "list genre"
-        list_songs_by_genre
-    else user_input == "play song"
+    when user_input == "list artists"
+      ist_artists
+    when user_input == "list genres"
+      list_genres
+    when user_input == "list artist"
+      list_songs_by_artist
+    when user_input == "list genre"
+      list_songs_by_genre
+    when user_input == "play song"
       play_song
     end
   end
